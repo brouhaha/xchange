@@ -9,6 +9,12 @@ xchange can verify the idcode (FPGA chip ID) and CRC of a Xilinx
 FPGA bitstream file, and optionally correct a bad CRC. It can also
 change the idcode.
 
+## WARNING
+
+Changing the contents of the bitstream to force it to load into the "wrong"
+FPGA could potentially damage the FPGA. There is no warranty, and the author
+disclaims all liability for such damage.
+
 ## Examples
 
 * `xchange ham.bit`
@@ -22,7 +28,8 @@ change the idcode.
 
 * `xchange -p xc7a15t ham.bit -o eggs.bit`
 
-  Copies the ham bistream to a new eggs bitstream, changing the idcode to
+  Copies the ham bistream, which might e.g. be a bistream generated for an
+  XC7A50T FPGA, to a new eggs bitstream, changing the idcode to
   that of the XC7A15T FPGA, and updating the CRC.
 
 ## License
