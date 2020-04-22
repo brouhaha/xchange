@@ -99,7 +99,7 @@ const part_info_t part_info[] =
   { 0x036db093, 0x0fffffff, 38, "xc7vh870t" },
 
   // There does not appear to be any official source for XC7Z idcode values
-  // unknown "ZC7Z007S"
+  { 0x03723093, 0x0fffffff,  6, "xc7z007" },
   { 0x03722093, 0x0fffffff,  6, "xc7z010" },
   // unknown "ZC7Z012S"
   // unknown "ZC7Z014S"
